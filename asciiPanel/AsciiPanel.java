@@ -302,7 +302,7 @@ public class AsciiPanel extends JPanel {
      * Class constructor. Default size is 80x24.
      */
     public AsciiPanel() {
-        this(80, 24);
+        this(24, 80);
     }
 
     /**
@@ -311,8 +311,8 @@ public class AsciiPanel extends JPanel {
      * @param width
      * @param height
      */
-    public AsciiPanel(int width, int height) {
-        this(width, height, null);
+    public AsciiPanel(int height, int width) {
+        this(height, width, null);
     }
 
     /**
@@ -323,7 +323,7 @@ public class AsciiPanel extends JPanel {
      * @param height
      * @param font   if passing null, standard font CP437_9x16 will be used
      */
-    public AsciiPanel(int width, int height, AsciiFont font) {
+    public AsciiPanel(int height, int width, AsciiFont font) {
         super();
 
         if (width < 1) {
